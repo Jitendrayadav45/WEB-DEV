@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar1</title>
+</head>
+<style>
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #031729;
+        color: #1c089c;
+      }
+        nav {
+            background-color: #eaeaea;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: #202020;
+            padding: 5px 15px;
+            position: relative;
+        }
+        nav a:hover {
+            color: #0a65c7;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #0a65c7;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+        nav a::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0a65c7;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        nav a:hover::before {
+            transform: scaleX(1);
+        }
+        .login-btn {
+            background-color: #254bf6;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #000102;
+        }
+        .login-btn:active {
+            background-color: #254bf6;
+        }
+        .login-btn:focus {
+            outline: none;
+        }
+        .login-btn:disabled {
+            background-color: #ccc;
+            color: #666;
+        }
+        .login-btn:disabled:hover {
+            background-color: #ccc;
+        }
+        .login-btn:disabled:active {
+            background-color: #ccc;
+        }
+        .login-btn:disabled:focus {
+            outline: none;
+        }
+        .login-btn:disabled {
+            cursor: not-allowed;
+        }
+       .login-btn:disabled:disabled {   
+            cursor: not-allowed;
+        }
+    
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+    </nav>
+    </body>
+</html>
+<br>
+<br>
+<!-- // 06_navbar/NavBar2.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NavBar2</title>
+        <link rel="stylesheet" href="style.css">
+        </head> 
+        <body>
+            <nav>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="login-btn">Login</a></li>
+                </ul>   
+                </nav>
+        </body>
+    </head>
+</html>
+
+    
